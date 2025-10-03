@@ -14,10 +14,10 @@ def quiz():
     for q in questions:
         ans = input(q + " ")
         if ans.lower() == flashcards[q].lower():
-            print("✅ Correct")
+            print(" Correct")
             score += 1
         else:
-            print("❌ Wrong | Answer:", flashcards[q])
+            print(" Wrong | Answer:", flashcards[q])
     print("\nFinal Score:", score, "/", len(questions))
 
 quiz()
